@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IdentifierForVendor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-ia-wsB">
-                                <rect key="frame" x="24" y="115" width="327" height="21"/>
+                                <rect key="frame" x="24" y="103" width="327" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="21" id="3nZ-0M-b5P"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="CSd-vq-daR"/>
@@ -42,17 +42,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="AdvertisingIdentifierText" text="AdvertisingIdentifier" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujr-Tz-pD0">
-                                <rect key="frame" x="24" y="65" width="327" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="1Rp-5x-ca8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="IdentifierForVendorText" text="IdentifierForVendor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkG-x7-SBD">
-                                <rect key="frame" x="24" y="144" width="327" height="42"/>
+                                <rect key="frame" x="24" y="132" width="327" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="O8z-Ke-aR4"/>
                                     <constraint firstAttribute="height" constant="42" id="uZK-Aa-2eW"/>
@@ -61,30 +52,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="AdvertisingIdentifier" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-zw-iD8">
+                                <rect key="frame" x="24" y="65" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Im9-ia-wsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="1vU-Y8-3A8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Ujr-Tz-pD0" secondAttribute="trailing" constant="8" id="IFA-R3-Qxc"/>
+                            <constraint firstItem="Im9-ia-wsB" firstAttribute="top" secondItem="hVt-zw-iD8" secondAttribute="bottom" constant="8" id="F1P-be-ht8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Im9-ia-wsB" secondAttribute="trailing" constant="8" id="K6o-Gn-cm9"/>
-                            <constraint firstItem="Im9-ia-wsB" firstAttribute="top" secondItem="Ujr-Tz-pD0" secondAttribute="bottom" constant="8" id="MkH-Im-6ar"/>
+                            <constraint firstItem="hVt-zw-iD8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="8" id="STV-jR-yD6"/>
                             <constraint firstItem="Im9-ia-wsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="V2s-7k-a3f"/>
                             <constraint firstItem="lkG-x7-SBD" firstAttribute="top" secondItem="Im9-ia-wsB" secondAttribute="bottom" constant="8" id="XAs-dU-Xer"/>
                             <constraint firstItem="Im9-ia-wsB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="YBO-V9-dP9"/>
-                            <constraint firstItem="Ujr-Tz-pD0" firstAttribute="top" secondItem="8AS-eU-Hw9" secondAttribute="bottom" constant="8" id="Zad-ki-hnH"/>
-                            <constraint firstItem="Ujr-Tz-pD0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="eE5-Vt-3zb"/>
                             <constraint firstItem="8AS-eU-Hw9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="fYu-2r-Ff7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lkG-x7-SBD" secondAttribute="trailing" constant="8" id="gKg-Yf-J3B"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8AS-eU-Hw9" secondAttribute="trailing" constant="8" id="kJ3-PW-Xzt"/>
                             <constraint firstItem="lkG-x7-SBD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="lwb-Hf-sMZ"/>
+                            <constraint firstItem="hVt-zw-iD8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="o5b-Mn-CBj"/>
                             <constraint firstItem="8AS-eU-Hw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="qdU-Ze-dHo"/>
-                            <constraint firstItem="Im9-ia-wsB" firstAttribute="top" secondItem="Ujr-Tz-pD0" secondAttribute="bottom" constant="8" id="t1D-Vv-SNN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Im9-ia-wsB" secondAttribute="trailing" constant="8" id="tP8-Cs-BkG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Im9-ia-wsB" secondAttribute="trailing" constant="8" id="twa-ML-tkE"/>
+                            <constraint firstItem="hVt-zw-iD8" firstAttribute="top" secondItem="8AS-eU-Hw9" secondAttribute="bottom" constant="8" id="wVK-92-fml"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="advertisingIdentifierText" destination="Ujr-Tz-pD0" id="Vc7-Za-IfE"/>
+                        <outlet property="advertisingIdentifierTextField" destination="hVt-zw-iD8" id="pTH-cT-bSy"/>
                         <outlet property="identifierForVendorText" destination="lkG-x7-SBD" id="Gha-EV-4aU"/>
                     </connections>
                 </viewController>

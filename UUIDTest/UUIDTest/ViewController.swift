@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var advertisingIdentifierText: UILabel!
+
+    @IBOutlet weak var advertisingIdentifierTextField: UITextField!
     @IBOutlet weak var identifierForVendorText: UILabel!
     
 
@@ -21,9 +22,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         uuidManager = UUIDManager()
         let ids = uuidManager.getUUID() as! [String:String]
-        advertisingIdentifierText.text = ids["ifa"]
-        identifierForVendorText.text = ids["ifv"]
-        
+        advertisingIdentifierTextField.text = ids["ifa"]
+        identifierForVendorText.text = ids["ifv"]        
     }
 
     override func didReceiveMemoryWarning() {
